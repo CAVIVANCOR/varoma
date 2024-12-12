@@ -1,7 +1,29 @@
-export default function App() {
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import Header from './sections/Header'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Services from './sections/Services'
+import Portfolio from './sections/Portfolio'
+import Working from './sections/Working'
+import Testimonials from './sections/Testimonials'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hola Mundo Soy Carlos Vivanco...!
-    </h1>
+    <>
+    <Header/>
+    <Hero/>
+    <About/>
+    <Services/>
+    <Portfolio/>
+    <Working/>
+    <Testimonials/>
+    <Contact/>
+    <Footer/>
+    </>
   )
 }
+
+export default App
