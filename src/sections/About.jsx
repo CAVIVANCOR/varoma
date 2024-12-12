@@ -4,9 +4,8 @@ import {motion} from 'framer-motion'
 import {slideUpVariants, zoomInVariants} from './animation'
 const About = () => {
   return (
-    <div id='about'>
-      <div className='lg:w-[80%] w-[90%] m-auto py-[60px] flex lg:flex-row flex-col
-      justify-between items-star gap-[50px]' id='about'>
+      <div id='about' className='lg:w-[80%] w-[90%] m-auto py-[60px] flex lg:flex-row flex-col
+      justify-between items-start gap-[50px]' >
         <motion.div
         initial="hidden"
         whileInView="visible"
@@ -35,8 +34,6 @@ const About = () => {
             </motion.button>
           </motion.div>
       </div>
-    </div>
-
   )
 }
 

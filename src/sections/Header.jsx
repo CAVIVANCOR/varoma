@@ -12,7 +12,7 @@ const Header = () => {
   }
   const navItems = [
     {
-      link: 'Hero', path: 'hero'
+      link: 'Inicio', path: 'hero'
     },
     {
       link: 'Nosotros', path: 'about'
