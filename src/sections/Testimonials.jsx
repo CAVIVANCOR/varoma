@@ -13,9 +13,9 @@ const Testimonials = () => {
       className='lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px]'>
       <motion.h1 
         variants={slideUpVariants} className='text-yellow-500 text-2xl'>
-         TESTIMONIALS</motion.h1>
+         CLIENTES</motion.h1>
       <motion.h1 
-        variants={slideUpVariants} className='text-black uppercase text-[40px] font-bold text-center'>
+        variants={slideUpVariants} className='text-white uppercase text-[40px] font-bold text-center'>
           Lo que dicen nuestros clientes</motion.h1>
       <motion.div
         variants={slideUpVariants}
@@ -28,11 +28,11 @@ const Testimonials = () => {
             {
               clients.map((item, index) => (
                 <div key={index} className='flex flex-col justify-center items-center '>
-                  <div className='border-2 border-white hover:bg-yellow-500 pb-[100px] pt-[30px]'>
+                  <div className='border-2 border-yellow-500 hover:bg-yellow-500 hover:border-white pb-[100px] pt-[30px]'>
                     <p className='text-white hover:text-black text-lg text-center'>{item.about}</p>
                   </div>
                   <div className='flex flex-col justify-center items-center gap-[5px]'>
-                    <img src={item.image} alt={item.name} className='mt-[-50px]' />
+                    <img src={item.image} alt={item.name} className='mt-[-60px]' />
                     <h1 className='text-white text-[27px] font-semibold uppercase'>{item.name}</h1>
                     <h1 className='text-yellow-500 text-[22px]'>{item.post}</h1>
                   </div>

@@ -2,6 +2,9 @@
 import React,{ useState} from 'react'
 import { FaXmark, FaBars } from 'react-icons/fa6'
 import {Link} from 'react-scroll'
+import { motion } from 'framer-motion';
+import {slideUpVariants, zoomInVariants} from './animation'
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const toggleMenu = () => {
@@ -46,9 +49,19 @@ const Header = () => {
         ))
       }
     </ul>
-    <button className='bg-yellow-500 hover:bg-black hover:text-white text-black px-10 py-3 rounded-full font-semibold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'>
-      Reach US
-    </button>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={zoomInVariants}
+      className='fixed-bottom right-100 p-3 z-20 left-initial flex items-center'>
+      <a href='https://wa.me/511949101509?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n' target='_blank' className='flex items-center relative'>
+        <motion.img 
+          src='/src/assets/whatsapp.png' 
+          alt='whatsapp' 
+          className='w-10 h-10'
+          whileHover={{ scale: 1.5, transition: { duration: 0.8, repeat: Infinity, ease: 'easeInOut' } }}/>
+      </a>
+    </motion.div>
     <div className='flex justify-between items-center lg:hidden mt-3' onClick={toggleMenu}>
       <div>
         {isMenuOpen ? <FaXmark className='text-yellow-500text-3xl cursor-pointer' onClick={closeMenu} /> : <FaBars className='text-yellow-500 text-3xl cursor-pointer'/>}

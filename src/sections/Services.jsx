@@ -24,7 +24,7 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           variants={zoomInVariants}        
-          className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-[20px] mt-[30px]'>
+          className='w-full grid lg:grid-cols-2 grid-cols-1 justify-center items-start gap-[20px] mt-[30px]'>
             {
               allservices.map((item, index) => (
                 <motion.div
