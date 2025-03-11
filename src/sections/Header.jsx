@@ -4,6 +4,7 @@ import { FaXmark, FaBars } from 'react-icons/fa6'
 import {Link} from 'react-scroll'
 import { motion } from 'framer-motion';
 import {slideUpVariants, zoomInVariants} from './animation'
+import logoVaroma from '../assets/logoVaromaAjustado.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,12 +28,21 @@ const Header = () => {
       link: 'Proyectos', path: 'projects'
     },
     {
+      link: 'Clientes', path: 'testimonials'
+    },
+    {
       link: 'Contacto', path: 'contact'
-    }
+    },
+
   ]
   return (
   <nav className='w-full flex bg-white justify-between items-center gap-1 lg:px-16 px-6 py-4 sticky top-0 z-50'>
-    <h1 className='text-black md:text-4xl text-3xl font-bold font-rubik'>Varoma<span className='text-yellow-500 italic'>Group</span></h1>
+    <motion-img 
+      initial="hidden"
+      whileInView="visible"
+      variants={zoomInVariants}>
+      <img src={logoVaroma} alt='logoVaroma' className='w-[102px] h-[61px] object-cover top-0 ml-0' />
+    </motion-img>
     <ul className='lg:flex justify-center items-center gap-6 hidden'>
       {
         navItems.map(({link, path}) => (
@@ -54,7 +64,7 @@ const Header = () => {
       whileInView="visible"
       variants={zoomInVariants}
       className='fixed-bottom right-100 p-3 z-20 left-initial flex items-center'>
-      <a href='https://wa.me/511949101509?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n' target='_blank' className='flex items-center relative'>
+      <a href='https://wa.me/511997160188?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n' target='_blank' className='flex items-center relative'>
         <motion.img 
           src='/src/assets/whatsapp.png' 
           alt='whatsapp' 
@@ -76,7 +86,7 @@ const Header = () => {
             className='text-black uppercase font-semibold cursor-pointer p-2 rounded-lg hover:bg-black hover:text-white w-full text-center'
             to={path}
             spy={true}
-            offset={-100}
+            offset={100}
             smooth={true}
             >
               {link}

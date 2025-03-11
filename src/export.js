@@ -1,40 +1,53 @@
-import building from "../src/assets/building.svg";
-import construction from "../src/assets/construction.svg";
-import design from "../src/assets/design.svg";
-import paint from "../src/assets/paint.svg";
+import building from "../src/assets/instalacion.jpg";
+import construction from "../src/assets/Mantenimiento.jpg";
+import design from "../src/assets/pruebas.jpg";
+import paint from "../src/assets/preventivo.jpg";
+import sincronismo from "../src/assets/sincronismo.jpg";
+import sincronismo01 from "../src/assets/sincronismo01.jpg";
+import sincronismo02 from "../src/assets/sincronismo02.jpg";
+import sincronismo03 from "../src/assets/sincronismo03.jpg";
 
-import { IoDocumentTextSharp } from "react-icons/io5";
-import { MdOutlineDesignServices } from "react-icons/md";
-import { FaRegBuilding } from "react-icons/fa";
-import { FaSitemap } from "react-icons/fa";
 import { FcAcceptDatabase, FcCalendar, FcDepartment, FcRules } from "react-icons/fc";
 
-import client1 from "../src/assets/abb.png";
-import client2 from "../src/assets/client2.png";
-import client3 from "../src/assets/client3.png";
+import client1 from "../src/assets/logoCliente00.jpg";
+import client2 from "../src/assets/logoCliente01.jpg";
+import client3 from "../src/assets/logoCliente02.png";
+import client4 from "../src/assets/logoCliente03.jpg";
+import client5 from "../src/assets/logoCliente04.jpg";
 
 export const allservices = [
   {
     icon: building,
     title: "INSTALACION Y PUESTA EN MARCHA",
     about:"Transformadores de potencia y distribución, Celdas MT, Grupos electrógenos, Cableado MT y BT, Control e Instrumentación, Subestaciones eléctricas prefabricadas, HML y accesorios, Tableros eléctricos industriales, Bancos DC y paneles SCADA",
+    icons:[]
   },
   {
     icon: construction,
     title: "MANTENIMIENTO Y MONTAJE",
     about:"Subestaciones y salas eléctricas en MT, Celdas (GIS, convencionales, compactas), Líneas eléctricas aéreas y subterráneas en MT, Transformadores de distribución y potencia MVA, Mallas y puesta a tierra",
+    icons:[]
   },
   {
     icon: design,
     title: "PRUEBAS Y DIAGNOSTICO",
     about:
       "Pruebas de pre-comisionamiento, Pruebas de comisionamiento, Pruebas funcionales y puesta en servicio, Diagnóstico en equipos de baja, media y alta tensión",
+    icons:[]
   },
   {
     icon: paint,
     title: "MANTENIMIENTO PREVENTIVO Y CORRECTIVO",
     about:
       "Subestaciones y salas eléctricas, Líneas eléctricas aéreas y subterráneas en MT, Transformadores de distribución y potencia MVA, Mallas y puesta a tierra",
+    icons:[]
+  },
+  {
+    icon: sincronismo,
+    title: "PRUEBAS DE SINCRONIZACION DE GENERADORES CON RED ELECTRICA",
+    about:
+      "Garantizamos el correcto funcionamiento de encendido de los generadores Diesel cuando la energía de la red se haya cortado y entre en funcionamiento con la secuencia de fases, la frecuencia y la tensión sean las mismas, para que no genere sobrecargas a los generadores y afecte a la zona operativa",
+    icons: [sincronismo, sincronismo01, sincronismo02, sincronismo03],
   },
 ];
 
@@ -74,14 +87,28 @@ export const clients = [
   },
   {
     image: client2,
-    name: "Drew James",
+    name: "Consorcio Salud San Ignacio",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
     post: "Architect",
   },
   {
     image: client3,
-    name: "Sam Peterson",
+    name: "Consorcio Supervisor TP Callao",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+    post: "Builder",
+  },
+  {
+    image: client4,
+    name: "Agrokasa",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+    post: "Builder",
+  },
+  {
+    image: client5,
+    name: "Tukuman",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
     post: "Builder",

@@ -10,12 +10,12 @@ const Working = () => {
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        className='lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px]'>
+        className='lg:w-[80%] w-[90%] m-auto py-[50px] flex flex-col justify-between items-center gap-[20px]'>
         <motion.h1 
           variants={slideUpVariants} className='text-yellow-500 text-2xl'>
             COMO TRABAJAMOS</motion.h1>
         <motion.h1 
-          variants={slideUpVariants} className='text-black uppercase text-[40px] font-bold text-center'>
+          variants={slideUpVariants} className='text-black uppercase text-[36px] font-bold text-center'>
             Nuestros Pilares</motion.h1>
         <motion.div
           variants={slideUpVariants}
@@ -38,7 +38,7 @@ const Working = () => {
                         variants={zoomInVariants} className='text-2xl text-center font-bold uppercase'>
                         {item.title}</motion.h1>
                     <motion.p
-                        variants={zoomInVariants} className='text-[20px] text-center text-gray-600'>
+                        variants={zoomInVariants} className='font-light text-center text-gray-600'>
                         {item.about}</motion.p>
                   </motion.div>
                 ))

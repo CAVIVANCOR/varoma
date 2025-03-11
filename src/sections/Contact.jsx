@@ -2,20 +2,28 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {slideUpVariants, zoomInVariants} from './animation'
+import logoVaroma from '../assets/logoVaromaAjustado.png'
 const Contact = () => {
   return (
-    <div id='contact' className='bg-white w-full'>
+    <div id='contact' className='lg:w-[80%] w-[100%] m-auto 
+      lg:py-[80px] pt-[150px] pb-[50px] flex lg:flex-row flex-col justify-between items-start gap-[20px] bg-white'>
       <div className='lg:w-[80%] w-[90%] m-auto py-[60px] flex lg:flex-row flex-col
-      justify-between items-star gap-[50px]' id='about'>
+      justify-between items-star gap-[10px]' id='about'>
         <motion.div
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
         className='lg:w-[60%] w-full flex flex-col justify-center items-start gap-6'>
-          <motion.h1 variants={slideUpVariants} className='text-yellow-500 text-2xl'>Contactenos</motion.h1>
-          <motion.h1 variants={slideUpVariants} className='text-black uppercase text-[40px] font-bold'>Envíenos un correo electrónico</motion.h1>        
+          <motion.h1 variants={slideUpVariants} className='text-[#EADC80] uppercase text-4xl font-bold lg:text-6xl'>Contactenos</motion.h1>
+          <motion-img 
+            initial="hidden"
+            whileInView="visible"
+            variants={zoomInVariants}>
+            <img src={logoVaroma} alt='logoVaroma' className='w-[136px] h-[82px] object-cover top-0 ml-0' />
+          </motion-img>
+          <motion.h1 variants={slideUpVariants} className='text-black uppercase text-2xl lg:text-6xl font-bold'>Envíenos un correo electrónico</motion.h1>        
           <div className='w-[120px] h-[6px] bg-yellow-500'></div>
-          <p className='text-3xl italic text-gray-600 mt-[60px]'>
+          <p className='lg:text-xl font-light italic text-gray-600 lg:mb-[60px]'>
           Siempre habra un miembro de nuestro equipo. Estaremos encantados de ayudarle.
           </p>
         </motion.div>
