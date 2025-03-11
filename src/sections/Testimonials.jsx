@@ -22,14 +22,13 @@ const Testimonials = () => {
         initial="hidden"
         whileInView="visible"
         variants={zoomInVariants}        
-        className='lg:w-full w-[90%] grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-20 mt-20'>
+        className='lg:w-full w-[90%] grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-20 mt-20 mb-16'>
             {
               clients.map((item, index) => (
                 <div key={index} className='flex flex-col justify-center items-center gap-20'>
                   <div className='flex flex-col justify-center items-center gap-[5px]'>
                     <img src={item.image} alt={item.name} className='mt-1 mb-2 hover:scale-125 rounded-xl bg-white border-8 border-[#4C6971] object-contain h-[100px] w-[300px]' />
                     <h1 className='text-white text-sm font-semibold uppercase'>{item.name}</h1>
-                    <h1 className='text-[#EADC80] text-xl mb-5'>{item.post}</h1>
                   </div>
                 </div>
               ))
