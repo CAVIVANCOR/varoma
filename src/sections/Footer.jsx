@@ -7,6 +7,9 @@ import { FaArrowUp } from 'react-icons/fa'
 const Footer = () => {
   return (
     <>
+      <div className='bg-black text-white flex justify-center items-center'>
+        <p className='font-extralight text-center italic'>www.varomagroup.com</p>
+      </div>
       <div className='bg-black text-white flex justify-center items-center gap-2 p-5'>
         <FaCopyright className='fill-yellow-500 lg:size-5 size-8'/>
         <p className='font-extralight text-center'>Copyright 2024, VaromaGroup, Todos los Derechos Reservados</p>
