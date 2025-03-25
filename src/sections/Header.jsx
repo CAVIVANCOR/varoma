@@ -5,7 +5,7 @@ import {Link} from 'react-scroll'
 import { motion } from 'framer-motion';
 import { zoomInVariants} from './animation'
 import logoVaroma from '../assets/logoVaromaAjustado.png'
-import logotelefonoverde from '../assets/logotelefonoverde.png'
+import telefonoverde from '../assets/telefonoverde.png'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const toggleMenu = () => {
@@ -63,9 +63,9 @@ const Header = () => {
       initial="hidden"
       whileInView="visible"
       variants={zoomInVariants}
-      className='fixed-bottom right-100 p-3 z-20 left-initial flex items-center'>
+      className='p-3 z-20 flex items-center'>
       <a href='https://wa.me/511997160188?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n' target='_blank' className='flex items-center relative'>
-        <img src={logotelefonoverde} alt='logotelefonoverde' className='w-10 h-10' />
+        <img src={telefonoverde} alt='telefonoverde' className='w-10 h-10' />
       </a>
     </motion.div>
     <div className='flex justify-between items-center lg:hidden mt-3' onClick={toggleMenu}>
