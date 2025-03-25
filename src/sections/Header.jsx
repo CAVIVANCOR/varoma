@@ -37,12 +37,12 @@ const Header = () => {
   ]
   return (
   <nav className='w-full flex bg-white justify-between items-center gap-1 lg:px-16 px-6 py-4 sticky top-0 z-50'>
-    <motion-img 
+    <motion.div 
       initial="hidden"
       whileInView="visible"
       variants={zoomInVariants}>
       <img src={logoVaroma} alt='logoVaroma' className='w-[102px] h-[61px] object-cover top-0 ml-0' />
-    </motion-img>
+    </motion.div>
     <ul className='lg:flex justify-center items-center gap-6 hidden'>
       {
         navItems.map(({link, path}) => (
@@ -65,11 +65,7 @@ const Header = () => {
       variants={zoomInVariants}
       className='fixed-bottom right-100 p-3 z-20 left-initial flex items-center'>
       <a href='https://wa.me/511997160188?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n' target='_blank' className='flex items-center relative'>
-        <motion.img 
-          src={logotelefonoverde}
-          alt='logotelefonoverde' 
-          className='w-10 h-10'
-          whileHover={{ scale: 1.5, transition: { duration: 0.8, repeat: Infinity, ease: 'easeInOut' } }}/>
+        <img src={logotelefonoverde} alt='logotelefonoverde' className='w-10 h-10' />
       </a>
     </motion.div>
     <div className='flex justify-between items-center lg:hidden mt-3' onClick={toggleMenu}>
