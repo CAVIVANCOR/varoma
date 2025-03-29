@@ -26,14 +26,14 @@ const Contact = () => {
               <p>Mensaje: ${formData.message}</p>
             </body>
           </html>
-        `;
-        const response = await axios.post(`${urlBackend}/send-email`, {
-          name: formData.name,
-          from: formData.email,
-          subject: 'Formulario de contacto Web CAVR',
-          phone: formData.phone,
-          text: messageHtml,
-        });
+          `;
+          const response = await axios.post(`${urlBackend}/send-email`, {
+            name: formData.name,
+            from: formData.email,
+            subject: 'Formulario de contacto Web CAVR',
+            phone: formData.phone,
+            text: messageHtml,
+          });
         console.log(response.data);
         alert('Correo electrónico enviado con éxito!',response.data);
       } catch (error) {
