@@ -64,7 +64,7 @@ const Header = () => {
       whileInView="visible"
       variants={zoomInVariants}
       className='p-3 z-20 flex items-center'>
-      <a href='https://wa.me/511997160188?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n' target='_blank' className='flex items-center relative'>
+      <a href='https://wa.me/+51997160188?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n' target='_blank' className='flex items-center relative'>
         <img src={telefonoverde} alt='telefonoverde' className='w-10 h-10' />
       </a>
     </motion.div>
